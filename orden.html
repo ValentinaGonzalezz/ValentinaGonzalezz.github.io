@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>HOME|Cake Shop</title>
+    <title>ORDEN|Cake Shop</title>
 </head>
 <body>
     <header>
@@ -38,78 +37,85 @@
         </nav>
 
         </header>
-    <main> 
-        <div class="contenedor mt-5">
-            <h1 class="mb-5 mt-3">Confectionary & bakery shop</h1>
-            <div id="carouselExampleDark" class="mt-5 carousel carousel-dark slide  align-center" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="asset/IMG_8956 2.jpg" class="  container-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>CAKE SHOP UY</h5>
-                            <p>BIENVENIDOS A NUESTRA PAGINA OFICIAL</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <img src="asset/IMG_9015 2.jpg" class="  container-fluid" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>CAKE SHOP UY</h5>
-                                <p>BIENVENIDOS A NUESTRA PAGINA OFICIAL</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon d-block" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next d-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                
-            </div>
-            <section class="section1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus amet ullam doloribus, sapiente voluptatibus, temporibus veniam voluptatem magni at non. Quidem obcaecati voluptatibus, vero facere nostrum earum sequi corrupti.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </section>
-            
-            <div class="header">
-            <h2>Los mas vendidos</h2>
-        </div>
-        <div class="card-group">
-            <div class="card">
-                <img src="asset/IMG0.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                <h5 class="card-title">Petits</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="asset/IMG1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Buttercream Personalizada</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="asset/IMG2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Chocobruce</h5>
-                <p class="card-text">Bizcochuelo con cacao, relleno con crema Bariloche, dulce de leche con nueces</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        </div>
 
+    <main>
+        
+        <h1>Haz tu orden</h1>
+        <div class="card mb-3" style="max-width: 2000px;">
+            <div class="row g-3">
+              <div class="col-md-4">
+                <img src="asset/IMG_9087.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <div class="principal">
+                    <div class="principal__contacto">
+                        <form action="">
+            
+                            <label for="fname">Nombre</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Tu nombre">
+            
+                            <label for="lname">Apellido</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Tu apellido">
+            
+                            <label for="country">Tipo de pastel</label>
+                            <select id="country" name="country">
+                                <option value="australia">Cumpleaños</option>
+                                <option value="canada">Boda</option>
+                                <option value="canada">Postre</option>
+                                <option value="canada">Baby shower</option>
+                                <option value="canada">Revelacion de sexo</option>
+                                <option value="usa">Otro</option>
+                            </select>
+            
+                            <label for="subject">Comentarios</label>
+                            <textarea id="subject" name="subject" placeholder="Deja tu comentario aqui"
+                                style="height:400px"></textarea>
+                            <div class="principal__contacto__botonenviar">
+                                <input type="submit" value="Enviar">
+                            </div>
+            
+                        </form>
+                    </div>
+                  <p class="card-text"></p>
+                  <p class="card-text"><small class="text-muted">Susucribete para tener noticias y descuentos.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- 
+    <div class="principal">
+        <div class="principal__contacto">
+            <form action="">
+
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="firstname" placeholder="Tu nombre">
+
+                <label for="lname">Apellido</label>
+                <input type="text" id="lname" name="lastname" placeholder="Tu apellido">
+
+                <label for="country">Tipo de pastel</label>
+                <select id="country" name="country">
+                    <option value="australia">Cumpleaños</option>
+                    <option value="canada">Boda</option>
+                    <option value="canada">Postre</option>
+                    <option value="canada">Baby shower</option>
+                    <option value="canada">Revelacion de sexo</option>
+                    <option value="usa">Otro</option>
+                </select>
+
+                <label for="subject">Comentarios</label>
+                <textarea id="subject" name="subject" placeholder="Deja tu comentario aqui"
+                    style="height:200px"></textarea>
+                <div class="principal__contacto__botonenviar">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
     </main>
+    Twitter -->
     <footer class="bg-dark text-center text-white">
         
         <div class="container p-4">
@@ -122,6 +128,7 @@
                     <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                 </svg><i class="fab fa-facebook-f"></i
                     ></a>
+                    
                     
                     <!-- Twitter -->
                     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
@@ -201,13 +208,13 @@
         <div class="row">
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase"><a href="catalogo.html" class="text-white">Catalogo</a></h5>
+                <h5 class="text-uppercase"><a href="index.html" class="text-white">Cake Shop</a></h5>
             </div>
             <!--Grid column-->
             
               <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase"><a href="orden.html" class="text-white">Haz tu orden</a></h5>
+                  <h5 class="text-uppercase"><a href="catalogo.html" class="text-white">Catalogo</a></h5>
                 </div>
               <!--Grid column-->
               
@@ -225,20 +232,20 @@
             </div>
             <!--Grid row-->
         </section>
+        <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2316.4196250851423!2d-55.94588061374678!3d-34.80815449614141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8993715b01ff%3A0x792c9f31af7e1e28!2sMirasoles%2C%2015800%20Ciudad%20de%20la%20Costa%2C%20Departamento%20de%20Canelones!5e0!3m2!1ses-419!2suy!4v1666972109976!5m2!1ses-419!2suy" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         <!-- Section: Links -->
     </div>
     <!-- Grid container -->
-    <div class="col">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2316.4196250851423!2d-55.94588061374678!3d-34.80815449614141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8993715b01ff%3A0x792c9f31af7e1e28!2sMirasoles%2C%2015800%20Ciudad%20de%20la%20Costa%2C%20Departamento%20de%20Canelones!5e0!3m2!1ses-419!2suy!4v1666972109976!5m2!1ses-419!2suy" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2022 Copyright:
         <a class="text-white" href="https://cakeshop.com/">cakeshop.com</a>
     </div>
     <!-- Copyright -->
-    
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>
